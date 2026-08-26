@@ -1,0 +1,7 @@
+<app-card>
+    <!-- Bind Class active based on the selected input signal. -->
+    <button [class.active]="selected" (click)="onSelectUser()">
+        <img [src]=" userImageUrl" [alt]="user.name">
+        <span>{{ user.name }}</span>
+    </button>
+</app-card>
